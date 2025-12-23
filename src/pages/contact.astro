@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { Navbar } from '../components/Navbar.jsx'
+import { Article } from '../components/Article'
+import { Footer } from '../components/Footer.jsx'
+import { ScrollUpButton } from '../components/ScrollUpButton'
+import '../styles/Theme.css'
+import '../styles/Diagonals.css'
+
+const articleData = {
+  title: "Contact Us",
+  content: `
+    <p>If you want to contribute to the project, go the the Github repo for the Tribes server.
+    If you have a problem with the client, contact me at chief@tribes.ltd</p>
+  `,
+}
+---
+
+<Layout title="Tribes -- Find your tribe">
+  <Navbar client:load />
+  <Article articleData={articleData} />
+  <Footer />
+  <ScrollUpButton client:load />
+</Layout>

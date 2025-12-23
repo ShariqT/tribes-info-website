@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { Navbar } from '../components/Navbar.jsx'
+import { Article } from '../components/Article'
+import { Footer } from '../components/Footer.jsx'
+import { ScrollUpButton } from '../components/ScrollUpButton'
+import '../styles/Theme.css'
+import '../styles/Diagonals.css'
+
+const articleData = {
+  title: "About Us",
+  content: `
+    <p>I'm just someone who wanted to make the Internet better than what has grown into. Maybe it is a penance for all of the work -- explicit and implicit -- that I 
+    myself have done to sustain the surveillance economy. The hope is that people see the vision of this project and
+    together we can create something that actually brings people together.</p>
+  `,
+}
+---
+
+<Layout title="Tribes -- Find your tribe">
+  <Navbar client:load />
+  <Article articleData={articleData} />
+  <Footer />
+  <ScrollUpButton client:load />
+</Layout>

@@ -2,7 +2,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 import { InvitationModal } from "./InvitationModal";
-import dashboard from "../assets/images/dashboard.jpg";
+import dashboard from "../assets/images/tribes-screenshot.png";
+// import dashboard from "../assets/images/dashboard.jpg";
 
 export const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -58,8 +59,8 @@ export const Hero = () => {
             </button>
             <button
               className="w-64 sm:w-52 h-12 rounded-xl font-bold text-primaryText border border-solid  flex justify-center items-center cursor-pointer bg-bgDark2 hover:bg-bgDark3 border-primaryColor transition"
-              onClick={() => setIsModalOpen(true)}
-              aria-label="Live demo"
+              onClick={() => window.open("https://docs.tribes.ltd/manifesto/", "_blank")}
+              aria-label="Learn about Tribes"
             >
               Learn More
             </button>
@@ -70,15 +71,17 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0, zIndex: 20 }}
           transition={{ duration: 0.5, delay: 0.15 }}
         >
-          <div className="relative w-screen flex justify-center ">
+          <div className="relative w-screen flex justify-center mb-9 ">
             <img
               src={dashboard.src}
               alt="Dashboard image"
+              width="523px"
+              // height="1112px"
               className="w-4/5 2xl:w-[1200px] mx-auto absolute z-10 rounded-xl main-border-gray hero-dashboard-border-gradient lg:top-6 xl:top-0"
             />
           </div>
         </motion.div>
-        <div className="relative w-screen flex justify-center ">
+        <div className="relative w-screen flex justify-center mt-8">
           <div className="shape-divider-bottom-1665343298 mt-4 sm:mt-16 md:mt-52 hidden lg:block">
             <svg
               data-name="Layer 1"

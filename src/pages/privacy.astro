@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { Navbar } from '../components/Navbar.jsx'
+import { Article } from '../components/Article'
+import { Footer } from '../components/Footer.jsx'
+import { ScrollUpButton } from '../components/ScrollUpButton'
+import '../styles/Theme.css'
+import '../styles/Diagonals.css'
+
+const articleData = {
+  title: "Privacy",
+  content: `
+    <p>Tribes is a decentralized network centered around privacy. If you use Tribes, you will join a community that 
+    doesn't want to be tracked, aggregated into a big data pipeline and data science'd to death.
+    In a world where private communication is criminalized, people use Tribes because it doesn't take notes.</p>
+  `,
+}
+---
+
+<Layout title="Tribes -- Find your tribe">
+  <Navbar client:load />
+  <Article articleData={articleData} />
+  <div class="flex justify-center relative">
+    <div class="tenor-gif-embed" data-postid="13565417" data-share-method="host" data-aspect-ratio="1.33333" data-width="50%"><a href="https://tenor.com/view/the-wire-stringer-bell-criminal-gif-13565417">The Wire GIF</a>from <a href="https://tenor.com/search/the-gifs">The GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+  </div>
+  <Footer />
+  <ScrollUpButton client:load />
+</Layout>

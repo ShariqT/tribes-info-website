@@ -1,24 +1,27 @@
-import { FacebookIcon } from "../assets/icons/FacebookIcon";
-import { InstagramIcon } from "../assets/icons/InstagramIcon";
+import { XIcon } from "../assets/icons/XIcon";
+import { RedditIcon } from "../assets/icons/RedditIcon";
 import { TailcastLogo } from "../assets/logos/TailcastLogo";
-import { TwitterIcon } from "../assets/icons/TwitterIcon";
 
 const footerData = [
   {
     title: "Learn More",
-    items: ["Protocol Spec", "Server Software", "Tribes Ecosystem"],
+    items: [
+      {name: "Protocol Spec", href: "https://docs.tribes.ltd/protocol/"}, 
+      {name: "Server Software", href: "https://docs.tribes.ltd/guides/vps-instructions/"}, 
+      {name: "Tribes Ecosystem", href: "https://docs.tribes.ltd/guides/ecosystem"}],
   },
   {
     title: "Important Links",
     items: [
-      "Roadmap",
-      "Get the Tribes Client",
-      "Privacy Policy"
+      {name: "Get the Tribes Client", href:"https://www.google.com"},
+      {name: "Privacy Policy", href:"/privacy"}
     ],
   },
   {
     title: "Company",
-    items: ["About Us", "Contact Us"],
+    items: [
+      {name: "About Us", href: "/about"}, 
+      {name: "Contact Us", href: "/contact"}],
   },
 ];
 
@@ -37,39 +40,20 @@ export const Footer = () => {
                   Tribes
                 </div>
               </div>
-              {/* <p className="mb-10 mt-4 sm:w-[22rem] lg:w-[20rem] xl:w-[24rem] text-gray-400 leading-loose text-center lg:text-left mx-auto lg:mx-0">
-                Dashboard images were made using free Dark Admin dashboard that
-                you can find
-                <a
-                  href="https://bootstrapious.com/p/bootstrap-4-dark-admin"
-                  target="_blank"
-                  className="text-gray-100 ml-1.5 "
-                  aria-label="Dark Admin Dashboard"
-                >
-                  here.
-                </a>
-              </p> */}
               <div className="w-36 mx-auto lg:mx-0">
-                <a
-                  className="inline-block w-10  h-10 mr-2 p-2 pt-[0.55rem] outlined-button"
-                  href="#"
-                  aria-label="Facebook"
-                >
-                  <FacebookIcon />
-                </a>
                 <a
                   className="inline-block w-10  h-10 mr-2 p-2 pt-[0.55rem] pl-[0.55rem] outlined-button"
                   href="#"
                   aria-label="Twitter"
                 >
-                  <TwitterIcon />
+                  <XIcon />
                 </a>
                 <a
                   className="inline-block w-10  h-10 mr-2 p-2 pt-[0.55rem] pl-[0.55rem] outlined-button"
                   href="#"
                   aria-label="Instagram"
                 >
-                  <InstagramIcon />
+                  <RedditIcon />
                 </a>
               </div>
             </div>
@@ -78,13 +62,13 @@ export const Footer = () => {
                 <h3 className="mb-6 text-2xl font-bold text-primaryText">Products</h3>
                 <ul>
                   {footerData[0].items.map((item, index) => (
-                    <li key={`${item}-${index}`} className="mb-4">
+                    <li key={`${item.name}-${index}`} className="mb-4">
                       <a
                         className="text-gray-400 hover:text-gray-300"
-                        href="#"
-                        aria-label={item}
+                        href={item.href}
+                        aria-label={item.name}
                       >
-                        {item}
+                        {item.name}
                       </a>
                     </li>
                   ))}
@@ -96,13 +80,13 @@ export const Footer = () => {
                 </h3>
                 <ul>
                   {footerData[1].items.map((item, index) => (
-                    <li key={`${item}-${index}`} className="mb-4">
+                    <li key={`${item.name}-${index}`} className="mb-4">
                       <a
                         className="text-gray-400 hover:text-gray-300"
-                        href="#"
-                        aria-label={item}
+                        href={item.href}
+                        aria-label={item.name}
                       >
-                        {item}
+                        {item.name}
                       </a>
                     </li>
                   ))}
@@ -112,13 +96,13 @@ export const Footer = () => {
                 <h3 className="mb-6 text-2xl font-bold text-primaryText">Company</h3>
                 <ul>
                   {footerData[2].items.map((item, index) => (
-                    <li key={`${item}-${index}`} className="mb-4">
+                    <li key={`${item.name}-${index}`} className="mb-4">
                       <a
                         className="text-gray-400 hover:text-gray-300"
-                        href="#"
-                        aria-label={item}
+                        href={item.href}
+                        aria-label={item.name}
                       >
-                        {item}
+                        {item.name}
                       </a>
                     </li>
                   ))}
