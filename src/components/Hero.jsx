@@ -19,7 +19,7 @@ export const Hero = () => {
           transition={{ duration: 0.5 }}
         >
           <h3 className="text-secondaryColor text-sm sm:text-base  mb-6 sm:mt-32 mt-16  font-bold">
-            Discover new data flow
+            
           </h3>
         </motion.div>
         <motion.div
@@ -28,11 +28,10 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.05 }}
         >
           <div className="text-5xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide  text-primaryText  px-8 sm:px-8 md:px-20 lg:px-4">
-            <h1 className="inline md:hidden">Analytics</h1>
-            <h1 className="hidden md:inline">Analytic tools suite</h1>
+            <h1 className="hidden md:inline">Finally, an alternative</h1>
           </div>
           <h1 className="mt-2 sm:mt-2 text-4xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide  text-primaryText  px-8 sm:px-20 md:px-24 lg:px-24">
-            for developers
+            to social media
           </h1>
         </motion.div>
         <motion.div
@@ -41,8 +40,7 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
         >
           <h2 className="text-secondaryText text-sm lg:text-base xl:text-lg sm:text-base mt-10 px-12 sm:px-48 ">
-            Experience seamless business integrations and powerful insights with
-            our cutting-edge analytic tools.
+            Its time to for you to connect with other people, privately, securely and away from the prying eyes of advertisers.
           </h2>
         </motion.div>
         <motion.div
@@ -63,7 +61,7 @@ export const Hero = () => {
               onClick={() => setIsModalOpen(true)}
               aria-label="Live demo"
             >
-              Live demo
+              Learn More
             </button>
           </div>
         </motion.div>

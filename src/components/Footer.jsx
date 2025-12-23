@@ -5,23 +5,20 @@ import { TwitterIcon } from "../assets/icons/TwitterIcon";
 
 const footerData = [
   {
-    title: "Products",
-    items: ["Services", "About Us", "News and Stories", "Roadmap"],
+    title: "Learn More",
+    items: ["Protocol Spec", "Server Software", "Tribes Ecosystem"],
   },
   {
     title: "Important Links",
     items: [
-      "Organization Team",
-      "Our Journeys",
-      "Pricing Plans",
       "Roadmap",
-      "Terms & Conditions",
-      "Privacy Policy",
+      "Get the Tribes Client",
+      "Privacy Policy"
     ],
   },
   {
     title: "Company",
-    items: ["About Us", "Jobs", "Press", "Contact Us"],
+    items: ["About Us", "Contact Us"],
   },
 ];
 
@@ -37,10 +34,10 @@ export const Footer = () => {
                   <TailcastLogo />
                 </div>
                 <div className="text-white font-['Inter'] font-bold text-xl">
-                  Tailcast
+                  Tribes
                 </div>
               </div>
-              <p className="mb-10 mt-4 sm:w-[22rem] lg:w-[20rem] xl:w-[24rem] text-gray-400 leading-loose text-center lg:text-left mx-auto lg:mx-0">
+              {/* <p className="mb-10 mt-4 sm:w-[22rem] lg:w-[20rem] xl:w-[24rem] text-gray-400 leading-loose text-center lg:text-left mx-auto lg:mx-0">
                 Dashboard images were made using free Dark Admin dashboard that
                 you can find
                 <a
@@ -51,7 +48,7 @@ export const Footer = () => {
                 >
                   here.
                 </a>
-              </p>
+              </p> */}
               <div className="w-36 mx-auto lg:mx-0">
                 <a
                   className="inline-block w-10  h-10 mr-2 p-2 pt-[0.55rem] outlined-button"

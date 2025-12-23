@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
-import feature1 from "../assets/images/feature1.jpg";
-import feature2 from "../assets/images/feature2.jpg";
-import feature3 from "../assets/images/feature3.jpg";
+import feature1 from "../assets/images/eye-globe.png";
+import feature2 from "../assets/images/no-ads-sign1.png";
+import feature3 from "../assets/images/talk-to-me.png";
 import feature4 from "../assets/images/feature4.jpg";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 
@@ -21,16 +21,17 @@ export const Features1 = () => {
         <div className="flex flex-wrap items-center 2xl:w-[1450px] xl:w-[1300px] w-11/12 mx-auto md:pl-4 xl:pr-16 xl:pl-16">
           <div className="w-full lg:w-1/2 mb-12 lg:mb-0">
             <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
-              <span className="block-subtitle">Embrace Innovation</span>
+              <span className="block-subtitle">The way the internet used to be</span>
               <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
-                Unlike any tool you used before
+                No tracking. No surveilance. No instrustive ads. And most 
+                importantly, privacy.
               </h2>
               <p className="mb-10 text-secondaryText leading-loose">
-                Discover a new level of data analysis with our innovative and
-                user-friendly platform. Transform your business needs with
-                actionable insights.
+                Connect with like-minded people in a safe space where
+                you can talk freely. Imagine that. Speaking freely without site moderators
+                looking over your comments to make sure they are advertiser friendly. 
               </p>
-              <ul className="mb-6 text-primaryText">
+              {/* <ul className="mb-6 text-primaryText">
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
                   <span>Real-time data visualization</span>
@@ -43,7 +44,7 @@ export const Features1 = () => {
                   <CheckArrowIcon />
                   <span>Seamless integration with APIs</span>
                 </li>
-              </ul>
+              </ul> */}
             </div>
           </div>
           <div className="w-3/4 mx-auto lg:w-1/2 flex flex-wrap lg:-mx-4 sm:pr-8 lg:pt-10 justify-center lg:pl-4 xl:px-8">
@@ -74,14 +75,14 @@ export const Features1 = () => {
                   aria-label="Feature image 3"
                 />
               </div>
-              <div className="py-3 pl-3 pr-2 rounded-lg ">
+              {/* <div className="py-3 pl-3 pr-2 rounded-lg ">
                 <img
                   src={feature4.src}
                   alt="Feature image 4"
                   className="rounded-xl  main-border-gray"
                   aria-label="Feature image 4"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

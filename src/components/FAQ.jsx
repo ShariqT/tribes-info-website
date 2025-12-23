@@ -3,24 +3,24 @@ import { motion } from "framer-motion";
 
 const FAQData = [
   {
-    question: "Can I upgrade or downgrade my plan at any time?",
+    question: "Is this project open source?",
     answer:
-      "Yes, you can easily upgrade or downgrade your plan at any time. Simply navigate to the account settings in your dashboard and choose the desired plan. The changes will be reflected immediately, and any adjustments in pricing will be applied on your next billing cycle. Our support team is more than happy to provide guidance and recommendations.",
+      "Yes. The Tribes server software is open source and there is a link to the Github repo at the top of this webpage. You can also find a link to the Github repo the docs website."
   },
   {
-    question: "How to claim your 25% discount offer?",
+    question: "Where can I host my Tribes server?",
     answer:
-      "To claim your 25% discount, simply sign up for an account and enter the promotional code at checkout. The discount will be applied automatically to your purchase.",
+      "You can host a Tribes server anywhere. You can host it on a Raspberry Pi, a VPS, or even the computer that you are reading this from right now. Tribes servers have a small footprint which make them very versitle."
   },
   {
-    question: "What's your refund policy?",
+    question: "How exactly is my privacy protected by using this?",
     answer:
-      "We offer a 30-day money-back guarantee on all our plans. If you're not satisfied with our product, simply contact our support team within 30 days of purchase for a full refund.",
+      "In two ways. First, Tribes uses PGP encryption. This is a gold standard encryption scheme that has been battle-tested and is still used to secure servers run by Google and Amazon. Using PGP to encrypt your messages is like using a steel vault as the front door to your house. No one is getting inside. Second, Tribes servers are built to NOT store information for long periods of time. After 5-6 hours, data is erased. This means, if by some reason, hackers get into the server, they will not have much to gain. There will be only an record that you were a member of the server but nothing of what you posted nor chatted."
   },
   {
     question: "How to get support for the product?",
     answer:
-      "Our dedicated support team is here to help. You can reach out to us through the contact form on our website, send an email, or engage with us via live chat. We'll be happy to assist you with any questions or concerns you may have",
+     "If you have questions about the Tribes server software, you can post them on the Gitub repo as issue. Questions about the Tribes client, can be directed at chief@tribes.ltd"
   },
 ];
 

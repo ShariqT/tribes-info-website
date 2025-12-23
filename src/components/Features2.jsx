@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import feature5 from "../assets/images/feature5.jpg";
+import feature5 from "../assets/images/forum-messages.png";
 import feature6 from "../assets/images/feature6.jpg";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 
@@ -22,28 +22,27 @@ export const Features2 = () => (
                 className="rounded-xl  main-border-gray"
               />
             </div>
-            <div className="py-3 md:pl-20 lg:pl-12 md:pr-2 rounded ">
+            {/* <div className="py-3 md:pl-20 lg:pl-12 md:pr-2 rounded ">
               <img
                 src={feature6.src}
                 alt="Feature image 6"
                 className="rounded-xl  main-border-gray"
               />
-            </div>
+            </div> */}
           </div>
         </div>
 
         <div className="w-full lg:w-1/2 mb-12 lg:mb-0 xl:pl-8">
           <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
-            <span className="block-subtitle">Make Data-Driven Decisions</span>
+            <span className="block-subtitle">Find your tribe</span>
             <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
-              Issue tracking you’ll enjoy using
+              Discover Tribes servers for your interests, no matter how niche
             </h2>
             <p className="mb-12 text-secondaryText leading-loose">
-              Monitor and track data issues with ease using our intuitive and
-              efficient issue tracking system. Stay ahead of potential problems
-              and improve your workflow.
+              Instead of talking to bots on X and Reddit, go to a Tribes server. You will 
+              be able to speak freely and securely.
             </p>
-            <ul className="mb-6 text-primaryText">
+            {/* <ul className="mb-6 text-primaryText">
               <li className="mb-4 flex">
                 <CheckArrowIcon />
                 <span>Collaborative environment</span>
@@ -56,7 +55,7 @@ export const Features2 = () => (
                 <CheckArrowIcon />
                 <span>Customizable notifications</span>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </div>
       </div>
