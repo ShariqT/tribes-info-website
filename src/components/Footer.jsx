@@ -43,15 +43,15 @@ export const Footer = () => {
               <div className="w-36 mx-auto lg:mx-0">
                 <a
                   className="inline-block w-10  h-10 mr-2 p-2 pt-[0.55rem] pl-[0.55rem] outlined-button"
-                  href="#"
-                  aria-label="Twitter"
+                  href="https://x.com/chief_tribes"
+                  aria-label="Twitter (now X)"
                 >
                   <XIcon />
                 </a>
                 <a
                   className="inline-block w-10  h-10 mr-2 p-2 pt-[0.55rem] pl-[0.55rem] outlined-button"
-                  href="#"
-                  aria-label="Instagram"
+                  href="https://www.reddit.com/r/FindingYourTribe/"
+                  aria-label="Reddit"
                 >
                   <RedditIcon />
                 </a>
