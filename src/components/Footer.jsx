@@ -7,13 +7,13 @@ const footerData = [
     title: "Learn More",
     items: [
       {name: "Protocol Spec", href: "https://docs.tribes.ltd/protocol/"}, 
-      {name: "Server Software", href: "https://docs.tribes.ltd/guides/vps-instructions/"}, 
-      {name: "Tribes Ecosystem", href: "https://docs.tribes.ltd/guides/ecosystem"}],
+      {name: "Server Software", href: "https://docs.tribes.ltd/guides/launch-on-railway/"}, 
+      {name: "Tribes Ecosystem", href: "https://docs.tribes.ltd/ecosystem"}],
   },
   {
     title: "Important Links",
     items: [
-      {name: "Get the Tribes Client", href:"https://www.google.com"},
+      {name: "Get the Tribes Client", href:"https://store.tribes.ltd/l/tribes-windows?wanted=true"},
       {name: "Privacy Policy", href:"/privacy"}
     ],
   },
